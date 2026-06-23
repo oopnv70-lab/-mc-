@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "sodium-crash",
+  "version": "1.0.0",
+  "name": "钠-崩溃",
+  "description": "检测到 Sodium（钠）模组安装时立即崩溃游戏。只要 sodium 存在，游戏就无法启动。",
+  "authors": [
+    "Operit AI"
+  ],
+  "contact": {},
+  "license": "AGPL-3.0",
+  "icon": "assets/sodium-crash/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.sodiumcrash.SodiumCrashMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "26.2"
+  },
+  "conflicts": {
+    "sodium": "*"
+  }
+}
